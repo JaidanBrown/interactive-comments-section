@@ -16,9 +16,9 @@ const Comment = () => {
 			<div className='comment-main'>
 				<div className='comment-meta'>
 					<img src='' alt='' />
-					<h1>Name</h1>
-					<p>1 week ago</p>
-					<p>
+					<p className='comment-name'>Name</p>
+					<p className='comment-date'>1 week ago</p>
+					<p className='comment-reply'>
 						<FaArrowCircleLeft />
 						Reply
 					</p>

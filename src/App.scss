@@ -15,12 +15,58 @@ $lightGray: hsl(223, 19%, 93%);
 $veryLightGray: hsl(228, 33%, 97%);
 $white: hsl(0, 0%, 100%);
 
+$borderRadius: 0.6em;
+
 body,
 html {
 	margin: 0;
 	padding: 0;
+	font-family: 'Rubik', sans-serif;
 }
 
 body {
 	background: $veryLightGray;
+}
+
+.container {
+	width: 50%;
+	margin: 0 auto;
+}
+
+// Comment Section
+
+.comment-container {
+	background: $white;
+	border-radius: $borderRadius;
+	padding: 1em;
+	display: flex;
+	align-items: center;
+}
+
+.comment-meta {
+	display: flex;
+	align-items: center;
+	width: 100%;
+
+	.comment-name {
+		font-weight: 700;
+	}
+	.comment-date {
+	}
+	.comment-reply {
+		font-weight: 700;
+		margin-left: auto;
+	}
+}
+
+.vote {
+	margin: 0 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: $lightGray;
+	border-radius: $borderRadius;
+	div {
+		padding: 0.5em;
+	}
 }
