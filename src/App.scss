@@ -15,6 +15,10 @@ $lightGray: hsl(223, 19%, 93%);
 $veryLightGray: hsl(228, 33%, 97%);
 $white: hsl(0, 0%, 100%);
 
+$weight400: 400;
+$weight500: 500;
+$weight700: 700;
+
 $borderRadius: 0.6em;
 
 body,
@@ -29,13 +33,16 @@ body {
 }
 
 .container {
-	width: 50%;
-	margin: 0 auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 5vh;
 }
 
 // Comment Section
 
 .comment-container {
+	width: 700px;
 	background: $white;
 	border-radius: $borderRadius;
 	padding: 1em;
@@ -48,25 +55,55 @@ body {
 	align-items: center;
 	width: 100%;
 
+	.comment-image {
+		padding-right: 1em;
+		width: 45px;
+	}
+
 	.comment-name {
-		font-weight: 700;
+		font-weight: $weight500;
+		padding-right: 1em;
+		color: $darkBlue;
 	}
 	.comment-date {
+		color: $grayishBlue;
 	}
 	.comment-reply {
-		font-weight: 700;
+		font-weight: $weight500;
 		margin-left: auto;
+		color: $darkBlue;
+		img {
+			padding-right: 0.5em;
+		}
+	}
+}
+
+.comment-content {
+	padding-right: 3em;
+	p {
+		color: $grayishBlue;
+		font-size: 16px;
+		margin: 8px;
 	}
 }
 
 .vote {
-	margin: 0 2em;
+	margin: 0 1.2em;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	background: $lightGray;
+	background: $veryLightGray;
 	border-radius: $borderRadius;
 	div {
-		padding: 0.5em;
+		padding: 0.6em;
+	}
+
+	.count {
+		font-weight: $weight500;
+		color: $darkBlue;
+	}
+
+	.icon-small {
+		color: $lightGrayishBlue;
 	}
 }
