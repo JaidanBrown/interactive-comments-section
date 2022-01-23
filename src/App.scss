@@ -41,6 +41,7 @@ body {
 	align-items: center;
 	flex-direction: column;
 	margin-top: 3vh;
+	position: relative;
 }
 
 // Textarea reset
@@ -166,4 +167,22 @@ textarea {
 			padding: 1em 2em;
 		}
 	}
+}
+
+// Reply
+
+.reply-container {
+	width: 600px;
+	margin-left: 100px;
+	position: relative;
+}
+
+.reply-container::before {
+	content: '';
+	position: absolute;
+	border-left: 1px solid $lightGrayishBlue;
+	left: -8.5%;
+	top: 0;
+	height: 100%;
+	background: red;
 }
