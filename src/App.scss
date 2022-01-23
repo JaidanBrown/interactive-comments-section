@@ -32,11 +32,24 @@ body {
 	background: $veryLightGray;
 }
 
+::placeholder {
+	font-family: 'Rubik', sans-serif;
+}
+
 .container {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
 	margin-top: 3vh;
+}
+
+// Textarea reset
+textarea {
+	outline: none;
+
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
 }
 
 // Comment Section
@@ -85,6 +98,7 @@ body {
 		color: $grayishBlue;
 		font-size: 16px;
 		margin: 8px;
+		line-height: 1.4em;
 	}
 }
 
@@ -106,5 +120,50 @@ body {
 
 	.icon-small {
 		color: $lightGrayishBlue;
+	}
+}
+
+// Commentbox
+
+.commentbox-container {
+	margin-top: 1vh;
+	background: $white;
+	border-radius: $borderRadius;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	width: 700px;
+	padding: 1em;
+
+	.commentbox-image {
+		img {
+			width: 35px;
+		}
+		padding-right: 1em;
+	}
+	.commentbox-comment {
+		padding-right: 1em;
+		width: 100%;
+		textarea {
+			width: 100%;
+			resize: none;
+			border-radius: $borderRadius;
+			border: 2px soild $lightGray;
+			font-size: 16px;
+			font-family: 'Rubik', sans-serif;
+			border: none;
+			color: $grayishBlue;
+		}
+	}
+	.commentbox-button {
+		margin-left: auto;
+		button {
+			background: $moderateBlue;
+			border: none;
+			border-radius: $borderRadius;
+			color: $white;
+			font-weight: $weight500;
+			padding: 1em 2em;
+		}
 	}
 }

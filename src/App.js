@@ -9,7 +9,7 @@ function App() {
 			{data.comments.map((comment, id) => {
 				return <Comment key={id} {...comment} />
 			})}
-			<CommentBox />
+			<CommentBox {...data.currentUser} />
 		</div>
 	)
 }
