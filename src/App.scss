@@ -11,7 +11,7 @@ $paleRed: hsl(357, 100%, 86%);
 
 $darkBlue: hsl(212, 24%, 26%);
 $grayishBlue: hsl(211, 10%, 45%);
-$lightGray: hsl(223, 19%, 93%);
+$lightGray: rgb(234, 236, 241);
 $veryLightGray: hsl(228, 33%, 97%);
 $white: hsl(0, 0%, 100%);
 
@@ -87,8 +87,18 @@ textarea {
 		font-weight: $weight500;
 		margin-left: auto;
 		color: $darkBlue;
-		svg {
-			margin-right: 0.5em;
+
+		&::before {
+			content: url('./img/icon-reply.svg');
+			padding-right: 0.5em;
+		}
+
+		&:hover {
+			color: $lightGray;
+		}
+
+		&:hover::before {
+			content: url('./img/icon-reply-hover.svg');
 		}
 	}
 }
@@ -172,6 +182,10 @@ textarea {
 			color: $white;
 			font-weight: $weight500;
 			padding: 1em 2em;
+
+			&:hover {
+				background: $lightGrayishBlue;
+			}
 		}
 	}
 }
@@ -191,5 +205,4 @@ textarea {
 	left: -8.5%;
 	top: 0;
 	height: 100%;
-	background: red;
 }
