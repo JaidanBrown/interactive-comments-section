@@ -87,8 +87,8 @@ textarea {
 		font-weight: $weight500;
 		margin-left: auto;
 		color: $darkBlue;
-		img {
-			padding-right: 0.5em;
+		svg {
+			margin-right: 0.5em;
 		}
 	}
 }
@@ -121,6 +121,13 @@ textarea {
 
 	.icon-small {
 		color: $lightGrayishBlue;
+
+		path {
+			&:hover {
+				fill: $darkBlue;
+				cursor: pointer;
+			}
+		}
 	}
 }
 
