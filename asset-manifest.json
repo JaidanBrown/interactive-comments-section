@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/interactive-comments-section/static/css/main.af5b0aec.css",
+    "main.js": "/interactive-comments-section/static/js/main.e9721e89.js",
+    "index.html": "/interactive-comments-section/index.html",
+    "static/media/icon-reply-hover.svg": "/interactive-comments-section/static/media/icon-reply-hover.c56db3c042cf19167e75.svg",
+    "static/media/icon-reply.svg": "/interactive-comments-section/static/media/icon-reply.bfb4589d45cd96abd45e3b82f7e7bbc6.svg",
+    "main.af5b0aec.css.map": "/interactive-comments-section/static/css/main.af5b0aec.css.map",
+    "main.e9721e89.js.map": "/interactive-comments-section/static/js/main.e9721e89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af5b0aec.css",
+    "static/js/main.e9721e89.js"
+  ]
+}
